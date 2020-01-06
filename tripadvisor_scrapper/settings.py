@@ -90,6 +90,10 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+
+# TRIP ADVISOR URLS
+TARGET_URLS = [u"url1" , u"url2"]
+
 # GOOGLE CLOUD STORAGE
 GCP_PROJECT = "GCP_PROJECT"
 GCP_JSON_AUTH_PATH = "resources/gcp_auth.json"

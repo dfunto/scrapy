@@ -7,10 +7,7 @@ class RatingSpider(scrapy.Spider):
     name = "ratings"
 
     def start_requests(self):
-        urls = [
-            u"https://www.tripadvisor.com.br/Restaurant_Review-g303631-d2639583-Reviews-Bacio_di_Latte-Sao_Paulo_State_of_Sao_Paulo.html"
-            # ,u"https://www.tripadvisor.com.br/Restaurant_Review-g303631-d5316821-Reviews-Bacio_di_Latte_Shopping_JK_Iguatemi-Sao_Paulo_State_of_Sao_Paulo.html"
-        ]
+        urls = self.settings["TARGET_URLS"]
 
         for url in urls:
             yield scrapy.Request(url=url) 
