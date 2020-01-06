@@ -1,0 +1,4 @@
+project: scrapy_cloud_project_id
+
+requirements:
+  file: requirements.txt
